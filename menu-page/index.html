@@ -4,10 +4,250 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Menu Page | Aristan Coffee Shop</title>
-  <meta http-equiv="refresh" content="0; url=https://Prasanna-Lakshmi-Jogi.github.io/artisan-coffee/" />
-  <link rel="canonical" href="https://Prasanna-Lakshmi-Jogi.github.io/artisan-coffee/menu-page/">
+  <link rel="canonical" href="../menu-page/">
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #ececec;
+      color: #0f172a;
+    }
+
+    .page-wrap {
+      width: min(1120px, calc(100% - 96px));
+      margin: 0 auto;
+      padding: 20px 0 48px;
+    }
+
+    .page-title {
+      margin: 6px 0 18px;
+      font-size: 64px;
+      line-height: 1.05;
+      font-weight: 400;
+      letter-spacing: 0.4px;
+    }
+
+    .menu-card {
+      background: #707070;
+      border-radius: 36px;
+      color: #ffffff;
+      overflow: hidden;
+      padding: 0;
+    }
+
+    .menu-header {
+      text-align: center;
+      padding: 16px 36px 22px;
+    }
+
+    .menu-header h2 {
+      margin: 0;
+      font-size: 68px;
+      font-weight: 400;
+      line-height: 1.05;
+    }
+
+    .menu-header p {
+      margin: 26px 0 0;
+      font-size: 24px;
+      line-height: 1.35;
+      text-align: left;
+    }
+
+    .divider {
+      height: 1px;
+      background: rgba(255, 255, 255, 0.75);
+      margin: 0;
+    }
+
+    .menu-grid {
+      padding: 34px 36px 18px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      column-gap: 22px;
+      row-gap: 26px;
+    }
+
+    .menu-item {
+      display: grid;
+      grid-template-columns: 210px 1fr;
+      gap: 16px;
+      align-items: start;
+      padding: 2px 0;
+    }
+
+    .menu-item figure {
+      margin: 0;
+      width: 210px;
+      height: 210px;
+      border-radius: 50%;
+      overflow: hidden;
+      background: #5f5f5f;
+    }
+
+    .menu-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .menu-info h3 {
+      margin: 8px 0 10px;
+      font-size: 45px;
+      font-weight: 400;
+      line-height: 1.1;
+    }
+
+    .item-line {
+      height: 1px;
+      background: rgba(255, 255, 255, 0.75);
+      margin-bottom: 14px;
+    }
+
+    .menu-info p {
+      margin: 0;
+      font-size: 46px;
+      line-height: 1.2;
+      font-weight: 300;
+      color: #ffffff;
+    }
+
+    .price {
+      margin-top: 14px;
+      font-size: 41px;
+      font-weight: 600;
+      color: #ffffff;
+    }
+
+    @media (max-width: 1100px) {
+      .page-wrap { width: min(980px, calc(100% - 56px)); }
+      .page-title { font-size: 50px; }
+      .menu-header h2 { font-size: 54px; }
+      .menu-header p { font-size: 20px; }
+      .menu-item { grid-template-columns: 172px 1fr; }
+      .menu-item figure { width: 172px; height: 172px; }
+      .menu-info h3 { font-size: 39px; }
+      .menu-info p { font-size: 38px; }
+      .price { font-size: 34px; }
+    }
+
+    @media (max-width: 860px) {
+      .menu-grid { grid-template-columns: 1fr; }
+      .page-title { font-size: 44px; }
+      .menu-header h2 { font-size: 48px; }
+      .menu-info h3 { font-size: 34px; }
+      .menu-info p { font-size: 30px; }
+      .price { font-size: 28px; }
+    }
+
+    @media (max-width: 520px) {
+      .page-wrap {
+        width: calc(100% - 24px);
+        padding-top: 12px;
+        padding-bottom: 24px;
+      }
+      .menu-card { border-radius: 24px; }
+      .menu-header { padding: 10px 16px 16px; }
+      .menu-grid { padding: 20px 16px 14px; }
+      .menu-header h2 { font-size: 40px; }
+      .menu-header p { margin-top: 18px; font-size: 16px; }
+      .menu-item { grid-template-columns: 120px 1fr; gap: 12px; }
+      .menu-item figure { width: 120px; height: 120px; }
+      .menu-info h3 { margin-top: 0; font-size: 26px; }
+      .menu-info p { font-size: 20px; }
+      .price { font-size: 21px; }
+    }
+  </style>
 </head>
 <body>
-  <p>If you are not redirected, <a href="https://Prasanna-Lakshmi-Jogi.github.io/artisan-coffee/">go to Home</a>.</p>
+  <main class="page-wrap">
+    <h1 class="page-title">Menu Page</h1>
+
+    <section class="menu-card" aria-label="Coffee Menu">
+      <div class="menu-header">
+        <h2>Menu</h2>
+        <p>Freshly brewed and locally sourced, every single day.</p>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="menu-grid">
+        <article class="menu-item">
+          <figure>
+            <img src="../wp-content/uploads/2026/01/image-1.png" alt="Hot Coffee">
+          </figure>
+          <div class="menu-info">
+            <h3>Hot Coffee</h3>
+            <div class="item-line"></div>
+            <p>It is prepared from roasted coffee beans.</p>
+            <div class="price">$8.00</div>
+          </div>
+        </article>
+
+        <article class="menu-item">
+          <figure>
+            <img src="../wp-content/uploads/2026/01/image-5.png" alt="Cappuccino">
+          </figure>
+          <div class="menu-info">
+            <h3>Cappuccino</h3>
+            <div class="item-line"></div>
+            <p>It is prepared from roasted coffee beans.</p>
+            <div class="price">$7.50</div>
+          </div>
+        </article>
+
+        <article class="menu-item">
+          <figure>
+            <img src="../wp-content/uploads/2026/01/image-8.png" alt="Macchiato">
+          </figure>
+          <div class="menu-info">
+            <h3>Macchiato</h3>
+            <div class="item-line"></div>
+            <p>Espresso, dollop of foam, a bold sip.</p>
+            <div class="price">$8.50</div>
+          </div>
+        </article>
+
+        <article class="menu-item">
+          <figure>
+            <img src="../wp-content/uploads/2026/01/image-15.png" alt="Iced Capp">
+          </figure>
+          <div class="menu-info">
+            <h3>Iced Capp</h3>
+            <div class="item-line"></div>
+            <p>Espresso, frothy milk, ice, blissful cappuccino magic.</p>
+            <div class="price">$9.30</div>
+          </div>
+        </article>
+
+        <article class="menu-item">
+          <figure>
+            <img src="../wp-content/uploads/2026/01/image-16.png" alt="Espresso">
+          </figure>
+          <div class="menu-info">
+            <h3>Espresso</h3>
+            <div class="item-line"></div>
+            <p>One shot of espresso served in a small cup</p>
+            <div class="price">$3.00</div>
+          </div>
+        </article>
+
+        <article class="menu-item">
+          <figure>
+            <img src="../wp-content/uploads/2026/01/image-14.png" alt="Caramel Latte">
+          </figure>
+          <div class="menu-info">
+            <h3>Caramel Latte</h3>
+            <div class="item-line"></div>
+            <p>Coffee chilled with ice, milk and vanilla syrup.</p>
+            <div class="price">$7.50</div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
